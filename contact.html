@@ -27,22 +27,46 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Your existing content remains unchanged for this commit -->
-    <h1>Contact Us</h1>
-    <p>College Address: Your College Address</p>
-    <p>Email: <a href="mailto:college@example.com">college@example.com</a></p>
-    <p>Phone: +975 XXXXXXXX</p>
-    <iframe src="YOUR MAP LINK"></iframe>
-    <form>
-      <label>Name:</label>
-      <input type="text" name="name">
-      <label>Email:</label>
-      <input type="email" name="email">
-      <label>Message: </label>
-      <textarea name="message"></textarea>
-      <button type="submit">Submit</button>
+  <main class="container my-4">
+
+    <!-- Contact Info Card -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h1 class="card-title">Contact Us</h1>
+        <p><i class="fas fa-map-marker-alt me-2"></i>College Address: Your College Address</p>
+        <p><i class="fas fa-envelope me-2"></i>Email:
+          <a href="mailto:college@example.com">college@example.com</a>
+        </p>
+        <p><i class="fas fa-phone me-2"></i>Phone: +975 XXXXXXXX</p>
+      </div>
+    </div>
+
+    <!-- Map Card -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title"><i class="fas fa-map me-2"></i>Find Us</h5>
+        <iframe src="YOUR MAP LINK" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="mb-4">
+      <div class="mb-3">
+        <label class="form-label">Name:</label>
+        <input type="text" name="name" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email:</label>
+        <input type="email" name="email" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message:</label>
+        <textarea name="message" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
+    <!-- College Clubs Section -->
     <section>
       <h2>College Clubs</h2>
       <dl>
@@ -54,6 +78,7 @@
         <dd>Promotes physical activities, teamwork and sportsmanship.</dd>
       </dl>
     </section>
+
   </main>
 
   <footer class="text-center py-3">
